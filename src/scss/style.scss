@@ -2,6 +2,7 @@
 @import "variables";
 @import "mixins";
 @import "components/allComponents.scss";
+
 .container{
     max-width: 1200px;
     padding-right:5%;
@@ -9,7 +10,7 @@
     margin: 0 auto;
     @include desktop{
         padding-right:0%;
-        padding-left:0%; 
+        padding-left:0%;
     }
 }
 .social-network{
@@ -63,10 +64,10 @@
     }
     &__link--twitter{
         background-image: url("../img/main/icon-twitter.png");
-    } 
+    }
     &__link--instagram{
         background-image: url("../img/main/icon-instagram.png");
-    } 
+    }
     &__block:hover{
         height: 300px;
     }

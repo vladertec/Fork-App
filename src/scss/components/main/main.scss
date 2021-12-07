@@ -1,3 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@300;400;500&display=swap');
+
+body {
+  font-family: $lato-font;
+}
+
+
+.section-editor {
+  @include container-mix;
+  @include flex-container;
+  flex-direction: column;
+
+  &__title {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 28px;
+    color: #635C73;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__description {
+    margin-top: 27px;
+    font-size: 14px;
+    line-height: 20px;
+    color: $main-title-text;
+    text-align: center;
+  }
+
+  &__buttons {
+    margin-top: 27px;
+    @include flex-container;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+    .button-block {
+
+      &__btn {
+        margin-left: 9px;
+        padding: 6.7px 10px;
+        background-color: rgb(238, 238, 239);
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      &__icon {
+        padding-left: 2px;
+        padding-right: 5px;
+        height: 14px;
+        width: 24px;
+      }
+
+      &__numbers {
+        padding: 7px 5px;
+        border: 1px solid lightgrey;
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: -1%;
+        border-radius: 3px;
+      }
+    }
+  }
+
+
+
+  @include tablet {
+
+    .section-editor {
+
+      &__description {
+        margin-top: 33px;
+      }
+
+      &__buttons {
+        margin-top: 24px;
+      }
+    }
+  }
+
+
+
+  @include desktop {
+
+    &__title {
+      font-size: 54px;
+      line-height: 54px;
+    }
+
+    .section-editor {
+
+      &__description {
+        font-size: 21px;
+        line-height: 32px;
+        margin-top: 35px;
+        padding-left: 12%;
+        padding-right: 12%;
+      }
+
+      &__buttons {
+        margin-top: 24px;
+      }
+    }
+  }
+}
+
+
+
+.section-getting {
+  @include container-mix;
+  @include flex-container;
+  flex-direction: column;
+  margin-top: 120px;
+  text-align: center;
+
+  .name-block {
+    &__title {
+      font-family: $montserrat-font;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 38px;
+      color: $body-tertiary-text-color;
+    }
+  }
+
+  .characteristics {
+
+    &__block {
+      margin-top: 36px;
+    }
+  }
+
+  .inform-block {
+
+    &__image {
+    }
+
+    &__container {
+    }
+  }
+
+  .text-block {
+
+    &__title {
+      margin-top: 21px;
+      font-family: $montserrat-font;
+      font-size: 16px;
+      line-height: 16px;
+      color: $main-title-text;
+      text-align: center;
+    }
+
+    &__description {
+      margin-top: 14px;
+      padding-left: 14px;
+      padding-right: 14px;
+      font-size: 14px;
+      line-height: 21px;
+      color: $body-secondary-text-color;
+      text-align: center;
+    }
+  }
+
+  .picture-block {
+    margin-top: 64px;
+    margin-right: -9%;
+    padding-bottom: 20px;
+    width: 100%;
+
+    &__item-photo {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+
+  @include tablet {
+
+    .name-block {
+      &__title {
+        margin-top: 45px;
+        font-size: 42px;
+      }
+    }
+
+    .inform-block {
+      margin-top: 50px;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+
+      .first{
+        margin-left: 23px;
+      }
+
+      .second{
+        margin-left: 43px;
+      }
+
+      .third{
+        margin-left: 70px;
+      }
+
+      .fourth{
+        margin-left: 58px;
+      }
+    }
+
+    .text-block {
+      margin-top: -21px;
+      margin-left: 21px;
+
+      &__title {
+        margin-left: 3px;
+        text-align: left;
+      }
+
+      &__description {
+        text-align: left;
+        padding: 0;
+      }
+    }
+  }
+
+
+
+  @include desktop {
+    background-color: #F4F4F4;
+    padding-bottom: 50px;
+    margin-top: 60px;
+    display: grid;
+    grid-template-areas:
+            "a b"
+            "a c";
+    grid-template-columns: 50% 50%;
+    align-items: start;
+
+    .name-block {
+
+      &__title {
+        margin-top: 6%;
+        font-weight: bold;
+        font-size: 43px;
+        line-height: 50px;
+      }
+    }
+
+    .characteristics{
+      grid-area: a;
+    }
+
+    .inform-block {
+      grid-area: a;
+      margin-top: 50px;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+
+      .first{
+        margin-left: 23px;
+      }
+
+      .second{
+        margin-left: 43px;
+      }
+
+      .third{
+        margin-left: 70px;
+      }
+
+      .fourth{
+        margin-left: 58px;
+      }
+    }
+
+    .text-block {
+      margin-top: -21px;
+      margin-left: 21px;
+
+      &__title {
+        margin-left: 3px;
+        text-align: left;
+      }
+
+      &__description {
+        text-align: left;
+        padding: 0;
+      }
+    }
+
+    .picture-block {
+      grid-area: c;
+      width: 100%;
+      margin-top: -2%;
+
+      &__item-photo {
+        grid-area: c;
+        margin-left: 3%;
+      }
+    }
+  }
+}
+
+
+
 
 .main{
     .section-talk-people{
@@ -14,7 +321,7 @@
             padding-top: 57px;
         }
         .blocks-description{
-           
+
             .firms{
                 padding-bottom: 45px;
                 &__logo--smashing{
@@ -76,7 +383,7 @@
                 grid-template-rows: repeat(3,1fr);
                 justify-content: space-between;
                 align-items: end;
-                column-gap: calc(16px + (63 - 16) * ((100vw - 320px) / (1200 - 320))); 
+                column-gap: calc(16px + (63 - 16) * ((100vw - 320px) / (1200 - 320)));
                 padding-bottom: 73px;
             }
         }
@@ -96,7 +403,7 @@
                 grid-template-rows: repeat(2,1fr);
                 justify-content: center;
                 align-items: end;
-                column-gap: calc(16px + (87 - 16) * ((100vw - 320px) / (1200 - 320)));              
+                column-gap: calc(16px + (87 - 16) * ((100vw - 320px) / (1200 - 320)));
             }
             &__text{
                 width: 887px;

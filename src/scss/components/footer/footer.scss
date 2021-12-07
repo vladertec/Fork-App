@@ -1,0 +1,206 @@
+.section-subscription {
+  @include container-mix;
+  @include flex-container;
+  flex-direction: column;
+  background-color: rgb(74, 59, 78);
+  width: 100%;
+
+  &__title {
+    margin-top: 5px;
+    padding-bottom: 32px;
+    font-family: $montserrat-font;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 42px;
+    color: $body-primary-text-color;
+    text-align: center;
+  }
+
+  &__blocks {
+    @include flex-container;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .type-block {
+    margin-bottom: 17px;
+    padding-bottom: 36px;
+    width: 87%;
+    color: $body-primary-text-color;
+    @include flex-container;
+    flex-direction: column;
+    font-family: $montserrat-font;
+    background-color: rgb(95, 81, 97);
+    text-transform: uppercase;
+    text-align: center;
+
+    &__title {
+      width: 100%;
+      text-transform: uppercase;
+      font-size: 24px;
+      padding: 36px 0;
+      background-color: rgb(105, 91, 106);
+    }
+
+    &__price {
+      margin-top: 30px;
+      font-size: 60px;
+      line-height: 62px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    &__interval {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &__line {
+      margin-top: 38px;
+      width: 23%;
+      height: 5px;
+      background-color: $body-tertiary-text-color;
+    }
+
+    &__description {
+      padding-left: 5%;
+      padding-right: 5%;
+      margin-top: 30px;
+      font-size: 16px;
+      line-height: 18px;
+      text-transform: none;
+    }
+
+    &__purchase-btn {
+      margin-top: 37px;
+      padding: 15px 37px;
+      border-radius: 25px;
+      background-color: rgb(105, 91, 106);
+      text-transform: uppercase;
+      color: $body-primary-text-color;
+      font-family: $montserrat-font;
+    }
+
+    &__purchase-btn--first{
+      margin-top: 55px;
+    }
+
+    &__title--big{
+      background-color: rgb(63,44,65);
+    }
+
+    &__price--big {
+      margin-top: 18px;
+      font-size: 82px;
+    }
+
+    &__interval--big {
+      margin-top: 23px;
+    }
+
+    &__line--big {
+      margin-top: 46px;
+    }
+
+    &__description--big {
+      margin-top: 40px;
+    }
+
+    &__purchase-btn--big {
+      margin-top: 83px;
+    }}
+
+  .type-block--big {
+    padding-bottom: 47px;
+    width: 100%;
+    background-color: rgb(71,50,73);
+  }
+
+
+
+
+  @include tablet {
+    padding-bottom: 74px;
+
+    &__title {
+      font-size: 42px;
+      line-height: 44px;
+    }
+
+    &__blocks {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 3%;
+    }
+
+    .type-block {
+      width: 35%;
+      flex-direction: column;
+
+      &__description {
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+      }
+    }
+
+
+    .type-block--big {
+      width: 41%;
+      margin-left: -6%;
+    }
+  }
+
+
+
+
+
+  @include desktop {
+    padding-bottom: 110px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    &__title {
+      font-size: 48px;
+      line-height: 50px;
+    }
+
+    &__blocks {
+      margin-top: 45px;
+      display: flex;
+      flex-direction: row;
+      gap: 1.5%;
+    }
+
+    .type-block {
+      width: 29%;
+      flex-direction: column;
+
+      &__title--big{
+        padding:43px 96px;
+      }
+
+      &__description {
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+      }
+    }
+
+
+    .type-block--big {
+      width: 33%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
