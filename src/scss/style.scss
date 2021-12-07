@@ -1,0 +1,87 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "components/allComponents.scss";
+.container{
+    max-width: 1200px;
+    padding-right:5%;
+    padding-left:5%;
+    margin: 0 auto;
+    @include desktop{
+        padding-right:0%;
+        padding-left:0%; 
+    }
+}
+.social-network{
+    &__block{
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: calc(25% - 60px);
+        right: calc(10% - 60px);
+        transition: 700ms;
+        display: none;
+    }
+    &__all{
+        @include flex-container;
+        position: fixed;
+        border-radius: 50%;
+        background-color: $body-tretiary-color;
+        z-index: 2;
+        @include style-BG;
+        background-size: 80%;
+        width: 60px;
+        height: 60px;
+        bottom: calc(25% - 60px);
+        right: calc(10% - 60px);
+        background-image: url("../img/main/icon-message.png");
+    }
+    &__list{
+        position: relative;
+    }
+    &__item{
+        position: absolute;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        top: 20px;
+        transition: all 700ms ease;
+    }
+    &__link{
+        @include flex-container;
+        position: absolute;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        top: -20px;
+        transition: all 700ms ease;
+        @include style-BG;
+        cursor: pointer;
+    }
+    &__link--facebook{
+        background-image: url("../img/main/icon-facebook.png");
+    }
+    &__link--twitter{
+        background-image: url("../img/main/icon-twitter.png");
+    } 
+    &__link--instagram{
+        background-image: url("../img/main/icon-instagram.png");
+    } 
+    &__block:hover{
+        height: 300px;
+    }
+    &__block:hover .social-network__link--facebook{
+      top: 140px;
+    }
+    &__block:hover .social-network__link--instagram{
+        top: 70px;
+      }
+    &__block:hover .social-network__link--twitter{
+        top: 0px;
+    }
+    @include desktop{
+        &__block{
+            display: block;
+        }
+    }
+}
