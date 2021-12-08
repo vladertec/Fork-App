@@ -37,18 +37,18 @@
     background-color: $body-primary-text-color;
     border: 1px solid $body-tretiary-color;
 }
-/*
+
 @mixin desktop {
-    @media (min-width: #{$desktop-width + 1}){
+    @media (min-width: #{$desktop-width }){
         @content
     };
 }
 @mixin tablet {
-    @media (min-width: #{$tablet-width+1}){
+    @media (min-width: #{$tablet-width }){
         @content
     };
 
-}*/
+}
 
 @mixin flex-container {
   display: flex;
@@ -69,12 +69,6 @@
 
 @mixin tablet {
   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
     @content;
   }
 }

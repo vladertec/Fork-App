@@ -124,7 +124,7 @@
                     display: block;
                     padding-left: 17px;
                     font-family: $font-lato;
-                    font-weight: $font-weight-bold;
+                    font-weight: bold;
                     font-size: 24px;
                     line-height: 16px;
                     text-transform: uppercase;
@@ -187,7 +187,7 @@
                     display: block;
                     padding-left: 17px;
                     font-family: $font-lato;
-                    font-weight: $font-weight-bold;
+                    font-weight: bold;
                     font-size: 24px;
                     line-height: 16px;
                     text-transform: uppercase;
@@ -196,16 +196,30 @@
               }
               &__btn{
                 justify-self: start;
+                padding: 11px 35px;
+            }
+            &__burger{
+                display: none;
             }
               .menu-tablet{
+                display: block;
                 grid-area: menu-desktop;
                 justify-self: end;
                 width: 70%;
                .navigation-tablet{
                    padding-top: 5px;
+                   @include flex-container;
+                   justify-content: space-evenly;
                 .list-item-title{
                     &__link{
                         line-height: 15px;
+                        color: $body-tretiary-color;
+                        font-weight: $font-weight-bold;
+                        font-size: 16px;
+                        transition: 500ms;
+                    }
+                    &__link:hover{
+                        color: $body-primary-text-color;
                     }
                 }
             }
