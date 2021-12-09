@@ -150,7 +150,7 @@
                 .list-item-title{
                     &__link{
                         color: $body-tretiary-color;
-                        font-weight: $font-weight-bold;
+                        font-weight: bold;
                         font-size: 16px;
                         line-height: 18px;
                         transition: 500ms;
@@ -214,7 +214,7 @@
                     &__link{
                         line-height: 15px;
                         color: $body-tretiary-color;
-                        font-weight: $font-weight-bold;
+                        font-weight: bold;
                         font-size: 16px;
                         transition: 500ms;
                     }
@@ -274,7 +274,7 @@
      .wrapper-title-text{
    
      &__title-text{
-        font-weight: $font-weight-bold;
+        font-weight: bold;
         font-size: 48px;
         line-height: 48px;
         color: $body-primary-text-color;
