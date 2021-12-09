@@ -146,7 +146,8 @@
                .navigation-tablet{
                 padding-top: 23px;
                 @include flex-container;
-                justify-content: space-evenly;
+                // justify-content: space-evenly;
+                column-gap: calc(10px + (48 - 10) * ((100vw - 320px) / (1200 - 320)));;
                 .list-item-title{
                     &__link{
                         color: $body-tretiary-color;

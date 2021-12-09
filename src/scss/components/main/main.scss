@@ -77,14 +77,16 @@
   
   
       .button-block {
-  
+          @include flex-container;
         &__btn {
           margin-left: 9px;
-          padding: 6.7px 10px;
+          padding: 6.8px 10px;
           background-color: rgb(238, 238, 239);
           border: 1px solid lightgrey;
           border-radius: 3px;
           cursor: pointer;
+          border-top-right-radius: 0px;
+          border-bottom-right-radius: 0px;
         }
   
         &__icon {
@@ -95,12 +97,15 @@
         }
   
         &__numbers {
-          padding: 7px 5px;
+          padding: 9px 5px;
           border: 1px solid lightgrey;
           font-size: 12px;
           font-weight: bold;
-          margin-top: -1%;
+          border-left: none;
           border-radius: 3px;
+          border-top-left-radius: 0px;
+          border-bottom-left-radius: 0px;
+          
         }
       }
     }
@@ -121,7 +126,12 @@
           padding-top: 53px;
           line-height: 16px;
           padding-bottom: 93px;
+          font-size: 16px;
+          line-height: 18px;
       }
+        &__title{
+          font-size: 42px;
+        }
         &__description {
           margin-top: 33px;
         }
@@ -177,7 +187,6 @@
   
     .name-block {
       &__title {
-        font-family: $montserrat-font;
         font-weight: bold;
         font-size: 32px;
         line-height: 38px;
@@ -196,7 +205,6 @@
   
       &__title {
         margin-top: 21px;
-        font-family: $montserrat-font;
         font-size: 16px;
         line-height: 16px;
         color: $main-title-text;
@@ -369,7 +377,7 @@
             padding-top: 57px;
         }
         .blocks-description{
-
+               
             .firms{
                 padding-bottom: 45px;
                 &__logo--smashing{
@@ -432,7 +440,7 @@
                 justify-content: space-between;
                 align-items: end;
                 column-gap: calc(16px + (63 - 16) * ((100vw - 320px) / (1200 - 320)));
-                padding-bottom: 73px;
+                padding-bottom: 23px;
             }
         }
          }
@@ -452,6 +460,7 @@
                 justify-content: center;
                 align-items: end;
                 column-gap: calc(16px + (87 - 16) * ((100vw - 320px) / (1200 - 320)));
+                padding-bottom: 73px;
             }
             &__text{
                 width: 887px;
