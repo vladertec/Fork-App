@@ -8,7 +8,6 @@
   &__title {
     margin-top: 5px;
     padding-bottom: 32px;
-    font-family: $montserrat-font;
     font-weight: bold;
     font-size: 28px;
     line-height: 42px;
@@ -29,7 +28,6 @@
     color: $body-primary-text-color;
     @include flex-container;
     flex-direction: column;
-    font-family: $montserrat-font;
     background-color: rgb(95, 81, 97);
     text-transform: uppercase;
     text-align: center;
@@ -79,7 +77,6 @@
       background-color: rgb(105, 91, 106);
       text-transform: uppercase;
       color: $body-primary-text-color;
-      font-family: $montserrat-font;
     }
 
     &__purchase-btn--first{

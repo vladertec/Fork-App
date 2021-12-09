@@ -77,14 +77,16 @@
   
   
       .button-block {
-  
+          @include flex-container;
         &__btn {
           margin-left: 9px;
-          padding: 6.7px 10px;
+          padding: 6.8px 10px;
           background-color: rgb(238, 238, 239);
           border: 1px solid lightgrey;
           border-radius: 3px;
           cursor: pointer;
+          border-top-right-radius: 0px;
+          border-bottom-right-radius: 0px;
         }
   
         &__icon {
@@ -95,12 +97,15 @@
         }
   
         &__numbers {
-          padding: 7px 5px;
+          padding: 9px 5px;
           border: 1px solid lightgrey;
           font-size: 12px;
           font-weight: bold;
-          margin-top: -1%;
+          border-left: none;
           border-radius: 3px;
+          border-top-left-radius: 0px;
+          border-bottom-left-radius: 0px;
+          
         }
       }
     }
@@ -177,7 +182,6 @@
   
     .name-block {
       &__title {
-        font-family: $montserrat-font;
         font-weight: bold;
         font-size: 32px;
         line-height: 38px;
@@ -196,7 +200,6 @@
   
       &__title {
         margin-top: 21px;
-        font-family: $montserrat-font;
         font-size: 16px;
         line-height: 16px;
         color: $main-title-text;
