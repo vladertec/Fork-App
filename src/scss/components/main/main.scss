@@ -1,14 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@300;400;500&display=swap');
 
-body {
-  font-family: $lato-font;
-}
 .main{
+  position: relative;
+  .block-btn-down{
+    position: absolute;
+    width: 100%;
+    top: -22.5px;
+    text-align: center;
+    &__style{
+        @include style-btn;
+        padding: 13px 26px;
+        font-size: 18px;
+        line-height: 20px;
+        color: $body-primary-text-color;
+        background-color: $body-tretiary-color;
+        transition: 500ms;
+        cursor: pointer;
+        border: 2px solid transparent;
+    }
+    &__style:hover{
+        @include hover-btn;
+        border: 2px solid;
+    }
+}
+@include tablet {
+  .block-btn-down{
+    top: -32.5px;
+    &__style{
+    padding: 23px 60px;
+    font-size: 21px;
+    line-height: 23px;
+ }
+}
+}
+@include desktop {
+  .block-btn-down{
+    top: -32.5px;
+    &__style{
+    padding: 23px 60px;
+    font-size: 21px;
+    line-height: 23px;
+ }
+}
+}
   .section-editor {
     @include container-mix;
     @include flex-container;
     flex-direction: column;
-  
+    &__text-under-btn{
+      @include style-under-text;
+      color: $body-secondary-text-color;
+      padding-top: 35px;
+      padding-bottom: 79px;
+  }
     &__title {
       font-weight: bold;
       font-size: 26px;
@@ -65,9 +108,20 @@ body {
   
   
     @include tablet {
-  
+      .block-btn-down{
+        top: -32.5px;
+        &__style{
+        padding: 23px 60px;
+        font-size: 21px;
+        line-height: 23px;
+     }
+    }
       .section-editor {
-  
+        &__text-under-btn{
+          padding-top: 53px;
+          line-height: 16px;
+          padding-bottom: 93px;
+      }
         &__description {
           margin-top: 33px;
         }
@@ -81,14 +135,25 @@ body {
   
   
     @include desktop {
-  
+      .block-btn-down{
+        top: -32.5px;
+        &__style{
+        padding: 23px 60px;
+        font-size: 21px;
+        line-height: 23px;
+     }
+    }
       &__title {
         font-size: 54px;
         line-height: 54px;
       }
   
       .section-editor {
-  
+        &__text-under-btn{
+          padding-top: 53px;
+          line-height: 16px;
+          padding-bottom: 66px;
+      }
         &__description {
           font-size: 21px;
           line-height: 32px;
@@ -297,7 +362,7 @@ body {
         padding: 0px 25px;
         margin-bottom: -8px;
         &__title-text{
-            font-weight: $font-weight-bold;
+            font-weight: bold;
             font-size: 36px;
             line-height: 48px;
             color:$body-primary-text-color;
@@ -334,7 +399,7 @@ body {
                 }
                 &__description{
                     font-family: $font-lato;
-                    font-weight: $font-weight-bold;
+                    font-weight: bold;
                     font-style: italic;
                     font-size: 16px;
                     line-height: 24px;
