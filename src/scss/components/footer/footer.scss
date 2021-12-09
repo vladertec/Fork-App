@@ -5,8 +5,18 @@
   background-color: rgb(74, 59, 78);
   width: 100%;
 
+
+  &__line{
+    margin-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 82%;
+    height: 2px;
+    background-color: #645766;
+  }
+
   &__title {
-    margin-top: 5px;
+    margin-top: 15px;
     padding-bottom: 32px;
     font-weight: bold;
     font-size: 28px;
@@ -121,6 +131,7 @@
     padding-bottom: 74px;
 
     &__title {
+      margin-top: 88px;
       font-size: 42px;
       line-height: 44px;
     }
@@ -159,6 +170,7 @@
     padding-right: 10%;
 
     &__title {
+      margin-top: 112px;
       font-size: 48px;
       line-height: 50px;
     }

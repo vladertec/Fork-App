@@ -126,7 +126,12 @@
           padding-top: 53px;
           line-height: 16px;
           padding-bottom: 93px;
+          font-size: 16px;
+          line-height: 18px;
       }
+        &__title{
+          font-size: 42px;
+        }
         &__description {
           margin-top: 33px;
         }
@@ -372,7 +377,7 @@
             padding-top: 57px;
         }
         .blocks-description{
-
+               
             .firms{
                 padding-bottom: 45px;
                 &__logo--smashing{
@@ -416,8 +421,8 @@
             font-size: 14px;
             line-height: 21px;
             color: #A291A5;
-            padding-bottom: 22px;
         }
+
     }
     @include tablet{
         .section-talk-people{
@@ -435,7 +440,7 @@
                 justify-content: space-between;
                 align-items: end;
                 column-gap: calc(16px + (63 - 16) * ((100vw - 320px) / (1200 - 320)));
-                padding-bottom: 73px;
+                padding-bottom: 23px;
             }
         }
          }
@@ -455,6 +460,7 @@
                 justify-content: center;
                 align-items: end;
                 column-gap: calc(16px + (87 - 16) * ((100vw - 320px) / (1200 - 320)));
+                padding-bottom: 73px;
             }
             &__text{
                 width: 887px;
